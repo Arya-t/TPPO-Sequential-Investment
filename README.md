@@ -1,4 +1,4 @@
-﻿# ROA+DRL Minimal Core (TPPO Focus)
+﻿# Sequential Investment Decision via Deep Reinforcement Learning
 
 This folder is a minimal runnable subset of the original project for GitHub sharing.
 
@@ -30,3 +30,4 @@ This folder is a minimal runnable subset of the original project for GitHub shar
 - Select algorithm by editing `ALGO` in `run_minimal.py`.
 - `MAX_EPISODES` is set to 50 for quick smoke run. Increase for real training.
 - Model-based training outputs are saved to `./Model/...`.
+
