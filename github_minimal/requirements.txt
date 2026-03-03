@@ -1,0 +1,12 @@
+﻿numpy
+scipy
+matplotlib
+gym
+torch
+torch-scatter
+scikit-learn
+shapely
+pyproj
+xlsxwriter
+arviz
+ipython
