@@ -1,26 +1,32 @@
-# TPPO-Sequential-Investment
-Sequential Investment Decision via Transformer-PPO
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/Python-3.8+-blue)](https://www.python.org/)
-[![Paper](https://img.shields.io/badge/Paper-PDF-red)](LINK_TO_PAPER)
+﻿# ROA+DRL Minimal Core (TPPO Focus)
 
-## 📖 Abstract
-(这里复制你简历里该项目的 Scenario + Method + Outcome)
+This folder is a minimal runnable subset of the original project for GitHub sharing.
 
+## Included files
+- Core_DRL.py (merged from Hub_DRL.py + PPO_DRL.py)
+- Investregion.py
+- ROA.py
+- Region_Generator.py
+- allarea_set(6regions).pkl
+- run_minimal.py
+- requirements.txt
 
-## 🛠️ Method
-(简单列出你的核心算法，例如：)
-* **Algorithm:** TPPO (Transformer-based PPO) / GMORL-PSL
-* **Environment:** MOMDP / MDVRPTW
-* **Baselines:** Static Rules, Scalarized RL, Genetic Algorithm
+## Supported strategies in run_minimal.py
+- TPPO (default)
+- PPO
+- TSAC
+- SAC
+- MYOPIC
+- MYOPIC_K
 
-## 🚀 How to Run
-```bash
-# Clone the repository
-git clone [https://github.com/Arya-t/Repo-Name.git](https://github.com/Arya-t/Repo-Name.git)
+## Quick start
+1. Create/activate a Python environment (recommended Python 3.10-3.12).
+2. Install dependencies:
+   pip install -r requirements.txt
+3. Run:
+   python run_minimal.py
 
-# Install dependencies
-pip install -r requirements.txt
-
-# Run training
-python src/main.py --mode train
+## Notes
+- Select algorithm by editing `ALGO` in `run_minimal.py`.
+- `MAX_EPISODES` is set to 50 for quick smoke run. Increase for real training.
+- Model-based training outputs are saved to `./Model/...`.
